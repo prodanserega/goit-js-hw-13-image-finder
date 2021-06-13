@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -13,15 +14,20 @@
   </head>
   <body>
     <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
+      <input class="input-field" type="text" name="query" autocomplete="off" placeholder="Пошук" />
+      
     </form>
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+  
+    <ul class="gallery">
+     
+    </ul>
+  
+    <button type="button" class="button" data-action="load-more">
+      Додати ще 
+    </button>
+  
+  
+  
     <script src="./index.js"></script>
   </body>
 </html>

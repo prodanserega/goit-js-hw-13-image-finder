@@ -5,3 +5,123 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-color: #d8d8d8;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  min-width: 150px;
+  min-height: 30px;
+  margin-left: 25px;
+
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  border-width: 2px 0;
+  border-style: none solid double none;
+  border-color: #8d5527 #000 #071c0b;
+  border-radius: 6px;
+  background: linear-gradient(#70561f, #175422) #13461c;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(#67af74, #3c984c) #93c69c;
+}
+
+.input-field {
+  padding: 10px 15px;
+  margin-right: 15px;
+  min-width: 250px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #3c984c;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  color: #278d39;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.image-item {
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgb(25, 255, 121);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.stats {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+
+.pnotify {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
